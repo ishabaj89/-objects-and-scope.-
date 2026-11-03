@@ -8,5 +8,17 @@ const account = {
 
     getAccountName: function() {
         return this.accountName;
-    }
+    },
+
+
+deposit: function(amount) {
+    this.balance += amount;
+    return this.balance;
+}
 };
+
+console.log(account.getBalance());
+
+console.log(account.deposit(500));
+
+console.log(account.getBalance());
